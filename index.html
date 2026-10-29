@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NZeru Farm & Agro Dealer | Growing Malawi Together</title>
+<meta name="description" content="NZeru Farm & Agro Dealer — farm inputs, seeds, fertilizers, agrochemicals and practical farming support.">
+<style>
+:root{--green:#176b36;--green2:#2e8b57;--gold:#f2b632;--cream:#f7f4e9;--dark:#173322;--white:#fff;--muted:#64756a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);box-shadow:0 2px 12px #00000012}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;color:var(--green)}
+.logo-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:22px}
+nav{display:flex;gap:22px;align-items:center}
+nav a:hover{color:var(--green2)}
+.btn{display:inline-block;background:var(--green);color:white;padding:12px 19px;border-radius:8px;font-weight:700;border:0;cursor:pointer}
+.btn:hover{background:#0f5429}
+.btn.gold{background:var(--gold);color:#1f2a20}
+.hero{background:linear-gradient(120deg,#eaf6ed,#fff9e8);padding:75px 20px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:#dcefe1;color:var(--green);padding:7px 12px;border-radius:30px;font-weight:700;margin-bottom:15px}
+h1{font-size:clamp(2.2rem,5vw,4.5rem);line-height:1.05;margin-bottom:20px}
+h1 span{color:var(--green)}
+.hero p{font-size:1.12rem;color:#526359;max-width:650px;margin-bottom:25px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.farm-visual{min-height:340px;border-radius:25px;background:linear-gradient(160deg,#2e8b57 0 48%,#86b94e 48% 62%,#d7ae50 62%);position:relative;overflow:hidden;box-shadow:0 20px 50px #176b3630}
+.sun{position:absolute;width:90px;height:90px;background:#ffd15a;border-radius:50%;right:35px;top:30px}
+.tree{position:absolute;bottom:75px;left:55px;font-size:100px}
+.crop{position:absolute;bottom:20px;left:20px;right:20px;font-size:45px;letter-spacing:12px}
+.stats{max-width:1000px;margin:-30px auto 0;background:white;border-radius:15px;box-shadow:0 10px 35px #00000012;display:grid;grid-template-columns:repeat(3,1fr);padding:25px;position:relative}
+.stat{text-align:center;border-right:1px solid #e4e8e5}.stat:last-child{border:0}.stat b{font-size:1.5rem;color:var(--green);display:block}
+section{padding:75px 20px}.section-inner{max-width:1150px;margin:auto}.section-title{text-align:center;max-width:700px;margin:0 auto 40px}.section-title h2{font-size:2.2rem;margin-bottom:8px}.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{padding:25px;background:#fff;border:1px solid #e5ebe6;border-radius:15px;box-shadow:0 7px 25px #00000008}.icon{font-size:38px;margin-bottom:10px}.card h3{margin-bottom:7px}.card p{color:var(--muted);font-size:.95rem}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.check{margin:15px 0;display:flex;gap:10px}.check b{color:var(--green)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{border:1px solid #e3e9e4;border-radius:15px;overflow:hidden}.product-img{height:160px;display:grid;place-items:center;font-size:70px;background:#edf7ef}.product-body{padding:20px}.product-body h3{margin-bottom:5px}.product-body p{color:var(--muted)}
+.cta{background:var(--green);color:#fff;text-align:center}.cta p{max-width:650px;margin:10px auto 25px;color:#dbeee0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-box{background:#f6faf7;padding:28px;border-radius:15px}.contact-box div{margin:13px 0}.contact-box strong{display:block;color:var(--green)}
+form{display:grid;gap:12px}input,textarea,select{width:100%;padding:13px;border:1px solid #d7dfd9;border-radius:8px;font:inherit}textarea{min-height:120px}
+footer{background:#10261a;color:#dbe9df;padding:30px 20px}.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:.9rem;color:#9db2a4}
+@media(max-width:850px){nav{display:none}.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:1fr}.stats{margin:0 20px}.hero{padding-top:50px}}
+@media(max-width:520px){.cards,.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid #e4e8e5;padding:10px}.stat:last-child{border:0}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="#home"><span class="logo-mark">🌱</span><span>NZeru Farm & Agro Dealer</span></a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Contact Us</a>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<span class="badge">🌾 Farm Inputs • Advisory • Support</span>
+<h1>Growing <span>better harvests</span> together.</h1>
+<p>Welcome to NZeru Farm & Agro Dealer — your trusted partner for quality agricultural inputs, practical farming advice and solutions for productive, sustainable farming in Malawi.</p>
+<div class="hero-buttons"><a class="btn" href="#products">View Products</a><a class="btn gold" href="#contact">Request Support</a></div>
+</div>
+<div class="farm-visual"><div class="sun"></div><div class="tree">🌳</div><div class="crop">🌱🌱🌱🌱</div></div>
+</div>
+</section>
+
+<div class="stats">
+<div class="stat"><b>Quality</b>Trusted farm inputs</div>
+<div class="stat"><b>Local</b>Serving Malawian farmers</div>
+<div class="stat"><b>Support</b>Practical farming guidance</div>
+</div>
+
+<section id="services">
+<div class="section-inner">
+<div class="section-title"><h2>What We Do</h2><p>Simple, reliable solutions from planting to harvest.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🌽</div><h3>Farm Inputs</h3><p>Seeds, fertilizers and other essential agricultural inputs for your farming needs.</p></div>
+<div class="card"><div class="icon">🧪</div><h3>Crop Protection</h3><p>Crop protection products and guidance to help farmers manage common crop challenges.</p></div>
+<div class="card"><div class="icon">🚜</div><h3>Farm Support</h3><p>Practical advice on crop establishment, input use and better farm management.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Agro Business</h3><p>Helping farmers improve productivity, planning and market-oriented farming.</p></div>
+</div>
+</div>
+</section>
+
+<section id="products" class="about">
+<div class="section-inner">
+<div class="section-title"><h2>Featured Products</h2><p>Current selected products and prices:</p></div>
+<div class="products">
+<div class="product"><div class="product-img">🌽</div><div class="product-body"><h3>Maize</h3><p>Quality maize — <strong>MWK 100,000 per bag</strong>.</p><a class="btn" href="#contact">Order / Enquire</a></div></div>
+<div class="product"><div class="product-img">🪴</div><div class="product-body"><h3>Rice</h3><p>Quality rice — <strong>MWK 120,000 per bag</strong>.</p><a class="btn" href="#contact">Order / Enquire</a></div></div>
+<div class="product"><div class="product-img">🧴</div><div class="product-body"><h3>Agro Dealer Services</h3><p>Ask us about farm inputs and agricultural support available in Zomba.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-inner about-grid">
+<div><div class="section-title" style="text-align:left;margin:0 0 20px"><h2>About NZeru Farm</h2><p>Our goal is to make quality agricultural products and useful farming knowledge more accessible to farmers.</p></div>
+<div class="check">✓ <span><b>Quality first</b> — products selected with farmers in mind.</span></div>
+<div class="check">✓ <span><b>Farmer focused</b> — practical support, not just product sales.</span></div>
+<div class="check">✓ <span><b>Sustainable growth</b> — encouraging productive and responsible farming.</span></div>
+</div>
+<div class="card"><div class="icon">🌍</div><h3>Our Vision</h3><p>To become a trusted agricultural partner helping Malawian farmers increase productivity, improve livelihoods and build resilient farming businesses.</p></div>
+</div>
+</section>
+
+<section class="cta">
+<div class="section-inner"><h2>Ready to grow?</h2><p>Talk to NZeru Farm & Agro Dealer about products, availability, prices or farming support.</p><a class="btn gold" href="#contact">Get In Touch</a></div>
+</section>
+
+<section id="contact">
+<div class="section-inner">
+<div class="section-title"><h2>Contact NZeru Farm & Agro Dealer</h2><p>Update the details below with your real business contacts.</p></div>
+<div class="contact-grid">
+<div class="contact-box">
+<div><strong>📍 Location</strong>Zomba, Malawi</div>
+<div><strong>📞 Phone / WhatsApp</strong>0991 965 608</div>
+<div><strong>✉️ Email</strong>mlengachisomo7@gmail.com</div>
+<div><strong>🕘 Opening Hours</strong>Monday–Saturday, 08:00–17:00</div>
+</div>
+<div class="contact-box">
+<form onsubmit="sendMessage(event)">
+<input id="name" placeholder="Your name" required>
+<input id="phone" placeholder="Phone number" required>
+<select id="interest"><option>Product enquiry</option><option>Farm advice</option><option>Wholesale enquiry</option><option>Other</option></select>
+<textarea id="message" placeholder="How can we help?" required></textarea>
+<button class="btn" type="submit">Send Enquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div><b>🌱 NZeru Farm & Agro Dealer</b><div class="small">Growing Malawi together.</div></div><div class="small">© <span id="year"></span> NZeru Farm & Agro Dealer. All rights reserved.</div></div></footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+function sendMessage(e){
+ e.preventDefault();
+ const n=document.getElementById("name").value;
+ const p=document.getElementById("phone").value;
+ const i=document.getElementById("interest").value;
+ const m=document.getElementById("message").value;
+ const text=encodeURIComponent(`Hello NZeru Farm & Agro Dealer. My name is ${n}. Phone: ${p}. Enquiry: ${i}. ${m}`);
+ // Replace 265XXXXXXXXX with the business WhatsApp number.
+ window.open(`https://wa.me/265991965608?text=${text}`,"_blank");
+}
+</script>
+</body>
+</html>
